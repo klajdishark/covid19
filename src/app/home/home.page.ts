@@ -6,6 +6,7 @@ import {
     BackgroundGeolocationResponse
 } from '@ionic-native/background-geolocation/ngx';
 import {HTTP} from '@ionic-native/http/ngx';
+import {Router} from '@angular/router';
 
 @Component({
     selector: 'app-home',
@@ -21,16 +22,17 @@ export class HomePage {
     constructor(
         private backgroundGeolocation: BackgroundGeolocation,
         private http: HTTP,
+        private router: Router
     ) {
         // setInterval(() => {
         //     this.startBackgroundGeolocation();
         // }, 20000);
 
         // setTimeout(() => {
-           // document.getElementById('content').style.setProperty('--background', this.dangerColor);
-           // document.getElementById('title').innerHTML = '200 meters from you is a threat.';
-           // document.getElementById('icon').setAttribute('class', this.alertIcon);
-           // document.getElementById('pulse').style.backgroundColor = 'red' ;
+        // document.getElementById('content').style.setProperty('--background', this.dangerColor);
+        // document.getElementById('title').innerHTML = '200 meters from you is a threat.';
+        // document.getElementById('icon').setAttribute('class', this.alertIcon);
+        // document.getElementById('pulse').style.backgroundColor = 'red' ;
         // }, 5000);
     }
 

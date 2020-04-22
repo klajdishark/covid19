@@ -1,0 +1,58 @@
+<ion-header>
+    <ion-toolbar>
+        <ion-buttons slot="start">
+            <ion-button routerLink="/home">
+                <i class="fa fa-chevron-left" aria-hidden="true"></i>
+            </ion-button>
+        </ion-buttons>
+        <ion-title>Your Locations</ion-title>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <ion-card *ngFor="let i of [1,2,3,4,5,6,7]">
+        <ion-card-content>
+            <ion-grid>
+                <ion-row>
+                    <ion-col size="6">
+                        <ion-card-subtitle>
+                            <a href="#">
+                                <i class="fa fa-map-marker"></i>
+                                22/04/2020 15:30
+                            </a>
+                        </ion-card-subtitle>
+
+                        <div *ngIf="(i%2) == 0">
+                            <p style="color: #c91d12">
+                                Latitude: 41.3231 <br/> Longitude: 19.4414
+                            </p>
+                        </div>
+
+                        <div *ngIf="(i%2) != 0">
+                            <p>
+                                Latitude: 41.3231 <br/> Longitude: 19.4414
+                            </p>
+                        </div>
+
+                    </ion-col>
+
+                    <ion-col size="6">
+                        <div *ngIf="(i%2) == 0">
+                            <p style="color: #c91d12; text-align: center; line-height: 3.7rem; font-size: 2rem">
+                                <i class="fa fa-exclamation" aria-hidden="true"></i>
+                            </p>
+                        </div>
+
+                        <div *ngIf="(i%2) != 0">
+                            <p style="color: #00cc9d; text-align: center; line-height: 3.7rem;  font-size: 2rem">
+                                <i class="fa fa-check-circle" aria-hidden="true"></i>
+                            </p>
+                        </div>
+                    </ion-col>
+
+                </ion-row>
+            </ion-grid>
+
+        </ion-card-content>
+    </ion-card>
+</ion-content>
