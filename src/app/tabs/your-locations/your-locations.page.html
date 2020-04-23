@@ -30,20 +30,20 @@
 
                         <div *ngIf="(i%2) != 0">
                             <p>
-                                Latitude: 41.3231 <br/> Longitude: 19.4414
+                                Latitude: 41.8902142 <br/> Longitude: 12.4900422
                             </p>
                         </div>
 
                     </ion-col>
 
                     <ion-col size="6">
-                        <div *ngIf="(i%2) == 0">
+                        <div *ngIf="(i%2) == 0" routerLink="/tabs/map" [queryParams]="{lat:40.8984741, lng:20.6488037}">
                             <p style="color: #c91d12; text-align: center; line-height: 3.7rem; font-size: 2rem">
                                 <i class="fa fa-exclamation" aria-hidden="true"></i>
                             </p>
                         </div>
 
-                        <div *ngIf="(i%2) != 0">
+                        <div *ngIf="(i%2) != 0" routerLink="/tabs/map" [queryParams]="{lat:41.8902142, lng:12.4900422}">
                             <p style="color: #00cc9d; text-align: center; line-height: 3.7rem;  font-size: 2rem">
                                 <i class="fa fa-check-circle" aria-hidden="true"></i>
                             </p>
