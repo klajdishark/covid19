@@ -1,0 +1,39 @@
+<ion-header>
+    <ion-toolbar>
+        <ion-buttons slot="start">
+            <ion-button routerLink="/home">
+                <i class="fa fa-chevron-left" aria-hidden="true"></i>
+            </ion-button>
+        </ion-buttons>
+        <ion-title>Export your locations</ion-title>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <ion-card>
+        <ion-card-header>
+            <ion-card-title>Terms and conditions.</ion-card-title>
+            <ion-card-subtitle>Before publishing your location history please read carefully.</ion-card-subtitle>
+        </ion-card-header>
+        <ion-card-content>
+            <p>
+                In order to publish your location history you should be an infected person with COVID-19 and performed
+                tests that prove your are infected. Tests are associated with a code.
+            </p>
+            <br/>
+            <p>
+                To publish your history enter the test code.
+                The code will be verified in real-time if the test is positive and we will allow to publish your
+                history. In
+                other case you will publish your history.
+            </p>
+            <br />
+            <p>
+                <label for="testCode">Enter Test Code:</label>
+                <input type="text" id="testCode">
+
+                <ion-button size="default" fill="outline" color="primary">Publish</ion-button>
+            </p>
+        </ion-card-content>
+    </ion-card>
+</ion-content>

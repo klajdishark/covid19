@@ -6,8 +6,8 @@
     </ion-header>
 
     <div class="middle">
-         <span id="pulse" class="pulse ion-text-center">
-            <i id="icon" class="{{searchIcon}}"></i>
+         <span id="pulse" (click)="takeActionTracking()" class="pulse ion-text-center">
+            <i id="icon" class="{{startIcon}}"></i>
         </span>
         <h1 class="title" id="title">
             {{ 'homePageTitle' | translate }}
